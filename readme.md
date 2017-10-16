@@ -1,3 +1,5 @@
+install node packages with npm install
+
 run tests with 'npm test'
 
 Requirements:
