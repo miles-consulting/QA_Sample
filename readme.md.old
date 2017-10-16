@@ -1,0 +1,49 @@
+# QA Test Specification information
+Welcome to the QA technical test. The purpose of this test is to see how you would QA this incredibly complicated application.
+
+## Getting the site up and running
+1. `npm install`
+2. `npm start` or `node index.js`
+3. Open [http://localhost:8080](http://localhost:8080)
+
+## External services
+This test uses the sample user data found at `https://jsonplaceholder.typicode.com/users`.
+
+## Site Specification
+
+The site should have 2 pages
+
+1. Page 1 should be the home page
+    1. The home page should have the title "Home Page"
+    2. The home page should display a welcome message
+    3. The home page should display a list of users from the users service
+        1. Each user row should display the user's `name` and `email` address
+            1. The name should link to the account page for that specific user
+            2. The email should be a mailto link
+2. Page 2 should be the account page
+    1. The account page should have the title "Account Page"
+    2. The account page should the following user information
+        1. Name
+        2. Email (Should be a mailto link)
+        3. Phone
+        4. Website (Should be a link to the site)
+        5. A link to google maps with their location
+    3. There should be a button labeled "Back" which takes the user back to the home page
+3. A copyright for the current year should be displayed at the bottom of all pages
+
+## Expectations
+
+**Note: The specification is always correct**
+
+You are welcome to use any methods, frameworks or tools for testing. You may also use any ECMA language version you like.
+
+We would like to see the following implemented for this test
+
+1. Unit test back end
+2. Acceptance testing front end
+3. Fix any issues you tests may catch
+
+Along with the implementation of the tests, you may change the code in any way required to make it fully match the
+specification
+
+Bonus points for NPM integration (Using `package.json`) for running commands (e.g. `npm test`)

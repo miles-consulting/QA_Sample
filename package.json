@@ -1,0 +1,19 @@
+{
+  "name": "qa-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "node ./tests/test.js"
+  },
+  "author": "Calvin Mann <calvin@kodify.io>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.1",
+    "jade": "^1.11.0"
+  }
+}

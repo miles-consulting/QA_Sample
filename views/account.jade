@@ -1,0 +1,27 @@
+html
+    head
+        title This is the account page!
+        link(href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous")
+    body
+        div.container
+            h1 Account
+            a.btn.btn-primary(href="/") Back
+            h2 Details
+            table.table
+                tr
+                    td Name
+                    td#name #{user.name}
+                tr
+                    td Email
+                    td#email
+                        a(href="mailto:#{user.email}") #{user.email}
+                tr
+                    td Website
+                    td#website
+                        a(href="#{user.website}") #{user.website}
+                tr
+                    td Location
+                    td#location
+                        a(href="https://www.google.com/maps/search/?api=1&query=#{user.address.geo.lat},#{user.address.geo.lng}") link
+        footer#copyright Copyright 2017
+
